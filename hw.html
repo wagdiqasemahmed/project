@@ -1,0 +1,142 @@
+﻿<!doctype html>
+<html>
+<head>	
+<meta charset="utf-8">
+</head>
+<style>
+.main{
+display:flex;
+flex-direction:row-reverse;
+
+}
+.main .img{
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+}
+.main .child {
+display:flex;
+flex-direction:column;
+direction:rtl;
+padding:2%;
+justify-content:space-around;
+} 
+.main .btn {
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+}
+.btn button{
+border-radius:5px 5px;
+background-color:red;
+width:100%;
+height:10%;
+}
+.main .for{
+display:flex;
+flex-direction:column;
+//justify-content:space-around;
+border:solid 1px black;
+border-radius:5%;
+width:40%;
+margin-right:2%;
+
+box-sizing:border-box;
+}
+.main .for .message{
+height:20%;
+}
+.main .message #in{
+height:100%;
+width:83%;
+border-radius:5px;
+margin-right:8%;
+text-align:top;
+}
+.main  input{
+border-radius:5px;
+}
+.strin ,.num{
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+height:9%;
+margin:20px;
+
+}.main .strin  input{
+width:40%;
+}
+.main .num  input{
+width:40%;
+}
+.strin,.num,.message{
+direction:rtl;
+background-position:right-center;
+}
+.main  #pp{
+text-align:center;
+}
+.main .for #sub{
+margin:6%;
+height:10%;
+width:85%;
+background-color:rgb(255,120,120);
+}
+</style>
+<body>
+<div class="main">
+<div class="img">
+<img src="tab-item-01.png" width="150px" height="150px">
+<img src="tab-item-02.png" width="150px" height="150px">
+<img src="tab-item-03.png" width="150px" height="150px">
+</div>
+
+<div class="child">
+
+<div class="text">
+<h1>   سلطة دجاج طازجة</h1>
+<p>  بالرغم من وعي معظم المستطلعين عن الاثار السلبيه لتناول الوجبات السريعه الى ان نسبة </p>
+
+<p> استهلاكها تبقى مرتفعه </p>
+</div>
+
+<div class="text2">
+<h1>   عصير البرتقال</h1>
+<p>  بالرغم من وعي معظم المستطلعين عن الاثار السلبيه لتناول الوجبات السريعه الى ان نسبة </p>
+
+<p> استهلاكها تبقى مرتفعه </p>
+</div>
+
+<div class="text3">
+<h1>   سلطة فواكة</h1>
+<p>  بالرغم من وعي معظم المستطلعين عن الاثار السلبيه لتناول الوجبات السريعه الى ان نسبة </p>
+
+<p> استهلاكها تبقى مرتفعه </p>
+</div>
+</div>
+
+
+<div class="btn">
+<button>$10.50</button>
+<button>$10.50</button>
+<button>$10.50</button>
+</div>
+<div class="for">
+<h1 id="pp">للحجز تواصل معنا</h1>
+<div class="strin">
+<input type="text" placeholder="اسمك">
+<input type="mail" placeholder="البريد الالكتروني">
+</div>
+<div class="num">
+<input type="number" placeholder="رقم التلفون">
+<input type="date" placeholder="تاريخ الحجز">
+</div>
+<div class="message">
+<input id="in" type="text" placeholder="اكتب رساله">
+</div>
+<input id="sub" type="submit" placeholder="ارسال">
+
+</div>
+</div>
+</body>
+</html>
